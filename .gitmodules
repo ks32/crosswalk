@@ -1,15 +1,2 @@
 [submodule "third_party/tenta/sqlitecrypt"]
-	path = third_party/tenta/sqlitecrypt
-	url = git@bitbucket.org:mikandi/android-database-sqlitecrypt.git
-[submodule "third_party/tenta/meta_fs"]
-	path = third_party/tenta/meta_fs
-	url = git@bitbucket.org:mikandi/file-metadata-sqlite.git
-[submodule "third_party/tenta/chromium_cache"]
-	path = third_party/tenta/chromium_cache
-	url = git@bitbucket.org:mikandi/chromium-cache-metafs.git
-[submodule "third_party/tenta/crosswalk_extensions"]
-	path = third_party/tenta/crosswalk_extensions
-	url = git@bitbucket.org:mikandi/crosswalk-extensions.git
-[submodule "third_party/tenta/mimicvpn"]
-	path = third_party/tenta/mimicvpn
-	url = git@bitbucket.org:mikandi/chromium-mimicvpn.git
+	path = third_party/sqlitecrypt
