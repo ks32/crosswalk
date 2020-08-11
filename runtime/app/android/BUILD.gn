@@ -26,15 +26,4 @@ shared_library("libxwalkcore") {
     #"//xwalk/runtime/android/core_internal:xwalk_core_native_jni",
     "//xwalk/runtime/android/core_refactor:xwalk_refactor_native_jni",
   ]
-  if (tenta_chromium_build) {
-    deps += [
-      "//xwalk/third_party/tenta/meta_fs",
-      "//xwalk/third_party/tenta/crosswalk_extensions",
-    ]
-  }
-  public_configs = [
-    "//xwalk/third_party/tenta/meta_fs:meta_fs_pub",
-    "//xwalk/third_party/tenta/mimicvpn:mimicvpn_pub"
-  ]
-  public_deps = [ "//xwalk/third_party/tenta/mimicvpn:mimicvpn_src", ]
 }
