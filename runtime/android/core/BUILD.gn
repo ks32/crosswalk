@@ -29,18 +29,11 @@ android_library("xwalk_core_java") {
     "//xwalk/extensions/android:xwalk_core_extensions_java",
     "//device/geolocation:geolocation_java",
   ]
-  if (tenta_chromium_build) {
-    deps += [
-      "//xwalk/third_party/tenta/meta_fs/java:meta_fs_java",
-      "//xwalk/third_party/tenta/chromium_cache:chromium_cache_java",
-      "//xwalk/third_party/tenta/crosswalk_extensions/java:crosswalk_extensions_java",
-      "//xwalk/third_party/tenta/mimicvpn/java:mimicvpn_java",
-    ]
-  } else {
+
     deps += [
       "//xwalk/runtime/android/empty_tenta:tenta_empty_java",
     ]
-  }
+  
   srcjars =[ 
 #     "$root_gen_dir/xwalk_core_reflection_layer/wrapper/wrapper.srcjar"
   ]
