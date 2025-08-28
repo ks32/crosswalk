@@ -3,6 +3,16 @@
 # found in the LICENSE file.
 import("//xwalk/build/tenta.gni")
 
+# Custom linker flags for arm64 builds
+config("xwalk_arm64_ldflags") {
+  if (is_android && target_cpu == "arm64") {
+    ldflags = [
+      "-Wl,-z,max-page-size=16384",
+      "-Wl,-z,common-page-size=16384",
+    ]
+  }
+}
+
 shared_library("libxwalkcore") {
   sources = [
     "xwalk_entry_point.cc",
@@ -28,6 +38,7 @@ shared_library("libxwalkcore") {
     #has common meta_logging.h
     "//xwalk/runtime/android/empty_tenta",
   ]
+  configs += [ ":xwalk_arm64_ldflags" ]
   if (tenta_chromium_build) {
     deps += [
       "//xwalk/third_party/tenta/meta_fs",
