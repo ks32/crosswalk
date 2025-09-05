@@ -20,7 +20,7 @@
 #orig 
 #chromium_crosswalk_rev = 'dd39e4fbbc1e4417cef2f908cc0a42af1e2120aa'
 
-chromium_crosswalk_rev = 'dd34c592a78832912275550dc81d6e131098345d'
+chromium_crosswalk_rev = '30ba7a518bfd9882a50fd31308950e60e2100768'
 #'9a967afdddfb7b7af327681f52c1f92b83944f3c'
 #ab583b52a0576ccf60c791df6642f0ee195291d0'
 #5d68d90dcaff8042649baabca842f28249a95036'
